@@ -1,0 +1,104 @@
+/* Card Container */
+.card-container {
+  background-color: #fff;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effects */
+  cursor: pointer;
+}
+
+/* Hover effect */
+.card-container:hover {
+  transform: translateY(-5px); /* Lift the card slightly */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+}
+
+/* Card Title */
+.card-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Card Content */
+.card-content {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Tags Section */
+.tags {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Priority Indicator */
+.priority img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Feature Request Tag */
+.feature span {
+  background-color: #e0f7fa;
+  color: #00796b;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.9em;
+}
+
+/* General button styles */
+.btn {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0;
+  color: black;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* When the dropdown is open */
+.btn.open {
+  background-color: white;
+  color: black; /* White background, black text */
+}
+
+.groups {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  margin-top: 10px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1000;
+  width: 200px;
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth slide down effect */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.groups .grp-content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.grp-content .select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.groups.closed {
+  opacity: 0;
+  transform: translateY(-10px); /* Slide up effect */
+  pointer-events: none;
+}

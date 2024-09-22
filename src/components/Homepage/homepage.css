@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f4f4f4;
+}
+
+.display-content .btn {
+  display: flex;
+  align-items: center;
+  background-color: #dadcde;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.display-content .btn svg {
+  margin-right: 8px;
+}
+
+.groups {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  background-color: #f4f4f4;
+  position: absolute;
+  top: 60px; /* Adjust based on header height */
+  left: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grp-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.select {
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.hero-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 20px;
+}
+
+.group-content {
+  flex: 1;
+  min-width: 300px; /* Adjust the min width according to your design */
+  margin-right: 20px;
+}
+
+.group-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-bottom: 2px solid #ddd;
+  border-radius: 5px 5px 0 0;
+}
+
+.group-title .heading {
+  display: flex;
+  align-items: center;
+}
+
+.group-title .heading img {
+  margin-right: 10px;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Scrollbar styles */
+.hero-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.hero-container::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.hero-container::-webkit-scrollbar-track {
+  background-color: #f4f4f4;
+}
